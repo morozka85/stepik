@@ -1,3 +1,2 @@
 # stepik
-homework
-good
+homework for https://stepik.org/course/575/syllabus
