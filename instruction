@@ -371,3 +371,28 @@ assert "successful" in message.text
 button = WebDriverWait(browser, 5).until_not(
         EC.element_to_be_clickable((By.ID, "verify"))
     )
+    
+    --ФОРМАТИРОВАНИЕ с помощью f-strings--
+И наконец наиболее современный способ форматирования строк, который появился в Python3.6, носит название f-strings. Он позволяет исполнять выражения на Python прямо внутри строк, обладает еще большей лаконичностью и удобством использования. Для использования возможностей f-strings нужно указывать символ f перед строкой в таком формате: f"ваша строка {my_var}". В фигурных скобках указывается имя переменной, значение которой надо подставить в строку, или выражение, результат исполнения которого также требуется подставить в вашу строку.
+
+Подробнее про f-strings можно почитать здесь: https://realpython.com/python-string-formatting/#3-string-interpolation-f-strings-python-36. Так как мы предполагаем, что вы используете последнюю версию Python, то предлагаем вам применять именно этот подход в данном курсе.
+
+Пример 1:
+
+str1 = "one"
+str2 = "two"
+str3 = "third"
+f"Let's count together! {str1}, then goes {str2}, and then {str3}"
+Итог выполнения выражений в интерпретаторе:
+
+"Let's count together! one, then goes two, and then third"
+Пример 2:
+
+actual_result = "abrakadabra", f"Wrong text, got {actual_result}, something wrong"
+Итог выполнения выражений в интерпретаторе:
+
+'Wrong text, got abrakadabra, something wrong'
+Пример 3:
+
+>>> f"{2+3}"
+'5'
