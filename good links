@@ -27,4 +27,5 @@ http://frontiermag.ru/commit-message.html - как писать хорошие �
 •	https://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.support.expected_condition...
 •	https://stackoverflow.com/questions/15122864/selenium-wait-until-document-is-ready
 •	https://blog.codeship.com/get-selenium-to-wait-for-page-load/
+Гораздо лучше воспользоваться возможностью python для форматирования строк: https://realpython.com/python-string-formatting/#2-new-style-string-formatting-strformat
 
